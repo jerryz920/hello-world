@@ -6,4 +6,4 @@ ADD test.cc time.c /opt/
 RUN g++ /opt/test.cc -o /opt/test
 RUN gcc -O2 /opt/time.c -o /opt/time
 
-ENTRYPOINT ["/bin/sh"]
+ENTRYPOINT ["/bin/sh", "-c"]
